@@ -1,10 +1,20 @@
 import './styles/index.scss';  
+import Nav from './components/nav';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import Home from './home';
 
 function App() {
   return (
-    <div className="App">
-      <h1>SCSS</h1>
-    </div>
+    <Router>
+      <Nav />
+      <Switch>
+        {/* <Route path='/' component={Home}/> */}
+      </Switch>
+    </Router>
   );
 }
 

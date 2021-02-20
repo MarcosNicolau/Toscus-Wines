@@ -1,0 +1,29 @@
+@import 'library', 'absolute-positioning', 'fullscreen', 'transition';
+
+.hamburguer-container {
+    position: relative;
+    margin: 1em;
+}
+
+.hamburguer-btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    z-index: 10;
+    @include absolute-positioning(right, 1em);
+
+    img {
+        height: 4em;
+    }   
+}
+
+nav {
+    @include fullScreen;
+    transform: translateX(150%);
+    @include transition(transform, 250ms);
+}
+
+.nav-active {
+    transform: translateX(0%);
+    @include transition(transform, 250ms);
+}
