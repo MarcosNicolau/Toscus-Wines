@@ -1,0 +1,25 @@
+@import 'library';
+
+.our-wines-container {
+    @include flex-center(row);
+    position: relative;
+    gap: 15em;
+    margin-bottom: 20em;
+}
+
+.images {
+    display: flex;
+    height: 36em;
+    width: 48em;
+    gap: 1em;
+}
+
+.up-image {
+    transform: translateY(2em);
+}
+
+.abstract-img {
+    position: absolute;
+    top: 15em;
+    left: 0;
+}
