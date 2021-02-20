@@ -6,8 +6,10 @@ const Home = () => {
     return(
         <>
             <Hero />
-            <ThisIsToscus />
-            <Balance /> 
+            <main>
+                <ThisIsToscus />
+                <Balance /> 
+            </main>
         </>
     );
 }

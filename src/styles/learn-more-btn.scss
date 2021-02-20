@@ -1,0 +1,28 @@
+@import 'library';
+
+.learn-more-btn {
+    margin-top: 2em;
+    a {
+        font-family: $main-font;
+        font-weight: 300;
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: $secondary-color;
+    }
+
+    img {
+        transform: translateX(-150%);
+        opacity: 0;
+        margin-left: .5em;
+        height: .8em;
+        @include transition(all, 150ms);
+    }
+
+    :hover {
+        img {
+            transform: translateX(0%);
+            opacity: 1;
+            @include transition(all, 150ms);
+        }
+    }
+}

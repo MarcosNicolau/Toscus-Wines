@@ -4,7 +4,7 @@ import LearnMoreBtn from '../learn-more-btn';
 import '../../styles/balance.scss';
 
 const Balance = () => {
-    const description = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.';
+    const description = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text.';
 
     return (
         <section id="balance">
@@ -13,7 +13,7 @@ const Balance = () => {
                     <img src={balanceImg} alt=""/>
                 </div>
                 <div className="explanation-container">
-                    <Explanation title={'Balance'} subtitle={'is what define us'} description={description}/>
+                    <Explanation title={'Balance'} subtitle={'is what we are known for'} description={description}/>
                     <LearnMoreBtn />
                 </div>
             </div>

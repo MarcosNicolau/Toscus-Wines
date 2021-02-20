@@ -6,12 +6,12 @@ body {
   overflow-x: hidden;
 }
 
-#root {
-  display: flex;
-  flex-direction: column;
-  gap: 6em;
-}
-
 button {
   cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 18em;
 }

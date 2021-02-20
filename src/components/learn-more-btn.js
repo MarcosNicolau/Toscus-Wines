@@ -1,8 +1,13 @@
+import arrowImg from '../assets/arrow.svg';
+import '../styles/learn-more-btn.scss';
+
 const LearnMoreBtn = () => {
     return (
         <div className="learn-more-btn">
-            <a href="#">Learn More</a>
-            <img src="" alt="learn-more-arrow"/>
+{            // eslint-disable-next-line jsx-a11y/anchor-is-valid
+}            <a href="#">Learn More
+                <img src={arrowImg} alt="learn-more-arrow"/>
+            </a>
         </div>
     );
 }
