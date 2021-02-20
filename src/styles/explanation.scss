@@ -1,0 +1,28 @@
+@import 'library';
+
+.explanation>* {
+    margin: 0;
+}
+
+.explanation {
+    @include flex-center(column);
+    font-family: $main-font;
+    text-align: center;
+    width: 32.5rem;
+    h1 {
+        margin-bottom: .1em;
+        font-weight: 200;
+        font-size: 2.8rem;
+    }
+    h5 {
+        margin-bottom: 1em;
+        font-family: 600;
+        font-size: 1.25rem;
+        color: $tertiary-color;
+    }
+    p {
+        font-weight: 300;
+        font-size: 1.25rem;
+    }
+
+}

@@ -5,6 +5,32 @@ $tertiary-color: #838383;
 $imgs-background: #E0E0E0;
 
 //Fonts
-$main-font: 'Railway', sans-serif;
+$main-font: 'Raleway', sans-serif;
 $brand-font: 'Inconsolata', monospace;
 $quote-font: 'Cormorant Garamond', serif;
+
+$big-size: 4rem;
+$brand-size: 2.4rem;
+
+
+//Mixings
+@mixin fullscreen {
+    height: 100vh;
+    width: 100%;
+}
+
+@mixin absolute-positioning($direction, $distance) {
+    position: absolute;
+    #{$direction}: $distance;
+}
+
+@mixin transition($elements, $duration) {
+    transition: $elements $duration ease-in-out
+}
+
+@mixin flex-center($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}

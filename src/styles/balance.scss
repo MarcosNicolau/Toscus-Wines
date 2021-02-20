@@ -1,0 +1,9 @@
+@import 'library';
+
+.balance-container {
+    @include flex-center(row)
+}
+
+.explanation-container {
+    @include flex-center(column)
+}

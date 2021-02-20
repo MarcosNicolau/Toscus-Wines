@@ -1,8 +1,10 @@
-@import 'library', 'absolute-positioning', 'fullscreen', 'transition';
+@import 'library';
 
-.hamburguer-container {
-    position: relative;
-    margin: 1em;
+nav {
+    @include fullscreen;
+    z-index: 10;
+    position: absolute;
+    margin-top: 1em;
 }
 
 .hamburguer-btn {
@@ -17,8 +19,8 @@
     }   
 }
 
-nav {
-    @include fullScreen;
+.hamburguer {
+    @include fullscreen;
     transform: translateX(150%);
     @include transition(transform, 250ms);
 }

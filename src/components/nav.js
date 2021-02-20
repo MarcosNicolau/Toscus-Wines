@@ -13,9 +13,9 @@ const Nav = () => {
     }, [toogleNav]);
 
     return(
-        <div className="hamburguer-container">
+        <nav>
             <button className="hamburguer-btn" onClick={() => setToogleNav(prev => !prev)}><img src={toogleNav ? close : hamburguerImg} alt="hamburguer-btn"/></button>
-            <nav ref={nav} className="hamburguer">
+            <div ref={nav} className="hamburguer">
                 <ul>
                     <li><a href="#this-is-us">Who we are</a></li>
                     <li><a href="#balance">What define us</a></li>
@@ -24,8 +24,8 @@ const Nav = () => {
                     <li><a href="#visit-us">Visit us</a></li>
                     <li><a href="#our-story">Our Story</a></li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
     );
 }
 

@@ -1,0 +1,11 @@
+@import 'library';
+
+.this-is-toscus-container {
+    @include flex-center(column);
+    position: relative;
+    img {
+        position: absolute;
+        right: 0;
+        top: 12em;
+    }
+}

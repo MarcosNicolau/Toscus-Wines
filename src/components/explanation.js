@@ -1,9 +1,11 @@
+import '../styles/explanation.scss';
+
 const Explanation = ({ title, subtitle, description }) => {
     return(
         <div className="explanation">
-            <h1 className="explanation-tittle">{title}</h1>
-            <h5 className="explanation-subtitle">{subtitle}</h5>
-            <p className="explanation-description">{description}</p>
+            <h1>{title}</h1>
+            <h5>{subtitle}</h5>
+            <p>{description}</p>
         </div>
     )
 }

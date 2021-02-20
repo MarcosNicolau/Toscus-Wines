@@ -1,0 +1,49 @@
+@import 'library';
+
+.hero-container {
+    @include fullscreen;
+    @include flex-center(column);
+    position: relative;
+
+    background-image: url('../assets/hero-4.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.hero-quote {
+    color: $primary-color;
+    font-family: $quote-font;
+    font-weight: 700;
+    font-size: $big-size;
+
+    span {
+        display: block;
+        font-weight: 300;
+    }
+}
+
+.brand-name {
+    position: absolute;
+    transform: translateY(100%);
+    opacity: 0;
+
+    margin: 0;
+    bottom: 1em;
+
+    color: $primary-color;
+    font-family: $brand-font;
+    font-size: $brand-size;
+    font-weight: 300;
+
+    span {
+        font-size: $brand-size - 1rem;
+        display: block;
+    }
+}
+
+.brand-name-active {
+    opacity: 1;
+    transform: translateX(0%);
+    @include transition(all, 500ms);
+}
