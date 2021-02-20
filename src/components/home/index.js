@@ -3,6 +3,9 @@ import ThisIsToscus from './this-is-toscus';
 import Balance from './balance';
 import OurWines from './our-wines';
 import OurVineyards from './our-vineyards';
+import VisitUs from './visit-us';
+import OurStory from './our-story';
+import Footer from '../footer';
 
 const Home = () => {
     return(
@@ -13,7 +16,10 @@ const Home = () => {
                 <Balance /> 
                 <OurWines />
                 <OurVineyards />
+                <VisitUs />
+                <OurStory />
             </main>
+            <Footer />
         </>
     );
 }

@@ -22,7 +22,6 @@ nav {
 .hamburguer {
     @include fullscreen;
     transform: translateX(100%);
-    pointer-events: none;
     @include transition(transform, 250ms);
 }
 

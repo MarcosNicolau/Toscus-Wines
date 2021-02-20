@@ -1,0 +1,10 @@
+@import 'library';
+
+.our-story-container {
+    @include flex-center(column);
+    margin-bottom: 15em;
+}
+
+.img-container {
+    margin-top: 2em;
+}

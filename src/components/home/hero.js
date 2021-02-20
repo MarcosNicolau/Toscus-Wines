@@ -17,7 +17,7 @@ const HeroSection = () =>{
     }, []);
 
     return(
-        <section className='hero-section' >
+        <section className='hero-section' style={{paddingTop: 0}}>
             <div className='hero-container' ref={sectionRef}>
                 <h1 className='hero-quote'>"Wine improves with age, <span>The older the better"</span></h1>
                 <h5 className='brand-name' ref={brandRef}>Toscus Wines <span>Since 1901</span></h5>

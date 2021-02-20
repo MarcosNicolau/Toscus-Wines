@@ -32,5 +32,14 @@ $brand-size: 2.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     flex-direction: $direction;
+}
+
+@mixin btn($font-size) {
+    font-family: $main-font;
+    font-weight: 300;
+    font-size: $font-size;
+    text-decoration: none;
+    color: $secondary-color;
 }

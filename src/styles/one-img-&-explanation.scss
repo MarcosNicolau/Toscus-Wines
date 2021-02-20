@@ -1,6 +1,6 @@
 @import 'library';
 
-.balance-container {
+.container {
     @include flex-center(row);
     position: relative;
     gap: 15em;
@@ -11,12 +11,10 @@
     transform: translateY(-5em);
 }
 
-.balance-img {
-    height: 20em;
+.img-container {
     background-color: $imgs-background;
 
     img {
-        height: 100%;
         transform: translate(3em, -3em);
     }
 }

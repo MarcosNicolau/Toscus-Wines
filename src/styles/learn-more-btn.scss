@@ -3,11 +3,7 @@
 .learn-more-btn {
     margin-top: 2em;
     a {
-        font-family: $main-font;
-        font-weight: 300;
-        font-size: 1.1rem;
-        text-decoration: none;
-        color: $secondary-color;
+        @include btn(1.1rem);
     }
 
     img {
