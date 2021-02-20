@@ -2,6 +2,7 @@ import Hero from './hero';
 import ThisIsToscus from './this-is-toscus';
 import Balance from './balance';
 import OurWines from './our-wines';
+import OurVineyards from './our-vineyards';
 
 const Home = () => {
     return(
@@ -11,6 +12,7 @@ const Home = () => {
                 <ThisIsToscus />
                 <Balance /> 
                 <OurWines />
+                <OurVineyards />
             </main>
         </>
     );

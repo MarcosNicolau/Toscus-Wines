@@ -1,0 +1,28 @@
+@import 'library';
+
+.our-vineyards-container {
+    @include flex-center(column);
+    gap: 2em;
+}
+
+.images-container {
+    @include flex-center(row);
+    position: relative;
+}
+
+.images-on-top {
+    :first-child {
+        position: absolute;
+        left: -10em;
+        top: 0em;
+        z-index: 10;
+    }
+    :last-child {
+        transform: translate(7em, 7em);
+    }
+}
+
+.bigger-vineyard-img {
+    position: relative;
+    right: -10em;
+}
