@@ -7,21 +7,21 @@
     .explanation-container {
         transform: translateY(0%);
     }
+}
+
+.img-container {
+    margin-top: 2em;
     img {
         height: 50em;
     }
 }
 
-.img-container {
-    margin-top: 2em;
-}
-
 @media screen and (max-width: 1400px) {    
-    .our-story-container {
+    .img-container {        
         img {
             height: 30em;
         }
-    }  
+    }
 } 
 
 @media screen and (max-width: 900px) {    
