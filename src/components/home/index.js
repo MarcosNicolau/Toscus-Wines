@@ -6,7 +6,7 @@ import OurVineyards from './our-vineyards';
 import VisitUs from './visit-us';
 import OurStory from './our-story';
 import Footer from '../footer';
-import lazyLoading from '../../utils/observer';
+import lazyLoading from '../../utils/lazy-loading';
 import '../../styles/section-animation.scss';
 import { useEffect } from 'react';
 

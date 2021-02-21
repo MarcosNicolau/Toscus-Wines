@@ -28,14 +28,16 @@ const OurVineyards = () => {
         <section id="our-vineyards">
             <div className="our-vineyards-container">
                 <Explanation title={'Our Vineyards'} subtitle={'where everything is put together'}/>
+                
                 <div className="gallery">   
-                <div className='gallery-controller'>
-                    <img src={arrowLeft} onClick={() => changeImg('left')} alt='left-btn' className='controllers'/>
-                    {images.map((image, index) => {
-                        return <img key={index} src={image} alt="" className={image === activeImg ? 'active-img' : 'imgs'}/>
-                    })}
-                   <img src={arrowRight} onClick={() => changeImg('right')} alt='right-btn' className='controllers'/>
-                </div>
+                    <div className='gallery-controller'>
+                        <img src={arrowLeft} onClick={() => changeImg('left')} alt='left-btn' className='controllers'/>
+                        {images.map((image, index) => {
+                            return <img key={index} src={image} alt="" className={image === activeImg ? 'active-img' : 'imgs'}/>
+                        })}
+                        <img src={arrowRight} onClick={() => changeImg('right')} alt='right-btn' className='controllers'/>
+                    </div>
+
                     <div className="img-position">
                         {images.map((image, index) => {
                             return <div key={index} 
@@ -44,6 +46,7 @@ const OurVineyards = () => {
                         })}
                     </div>
                 </div>  
+
             </div>
         </section>
     )
