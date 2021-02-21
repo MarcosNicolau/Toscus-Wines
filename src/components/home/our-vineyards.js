@@ -5,9 +5,7 @@ import ourVineyardsImg_2 from '../../assets/our-vineyards-2.png';
 import ourVineyardsImg_3 from '../../assets/our-vineyards-3.png';
 import arrowLeft from '../../assets/arrow-left.svg';
 import arrowRight from '../../assets/arrow-right.svg';
-
-
-import '../../styles/our-vineyards.scss';
+import '../../styles/home/our-vineyards.scss';
 
 const OurVineyards = () => {
     const images = [ourVineyardsImg_1, ourVineyardsImg_2, ourVineyardsImg_3];

@@ -1,22 +1,22 @@
 import '../styles/nav.scss';
 import hamburguerImg from'../assets/hamburguer.svg';
 import close from '../assets/close.svg'
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Nav = () => {
-    const [toogleNav, setToogleNav] = useState(false);
-    const nav = useRef();
-    
+    const [toogleNav, setToogleNav] = useState(false);    
     useEffect(() => {
-        if(!toogleNav) return nav.current.classList.remove('nav-active'); 
-        return nav.current.classList.add('nav-active');
-    }, [toogleNav]);
-
+        if(toogleNav) return document.body.style.overflow = 'hidden';
+        document.body.style.overflow = ''
+    }, [toogleNav])
     return(
         <nav>
-            <button className="hamburguer-btn" onClick={() => setToogleNav(prev => !prev)}><img src={toogleNav ? close : hamburguerImg} alt="hamburguer-btn"/></button>
-            <div ref={nav} className="hamburguer">
-                <ul>
+            <img src={toogleNav ? close : hamburguerImg} alt="hamburguer-btn"
+                className={"hamburguer-btn"} 
+                onClick={() => setToogleNav(prev => !prev)}
+            />
+            <div className={`hamburguer ${toogleNav ? 'nav-active' : null}`}>
+                <ul onClick={() => setToogleNav(prev => !prev)}>
                     <li><a href="#this-is-us">Who we are</a></li>
                     <li><a href="#balance">What define us</a></li>
                     <li><a href="#toscus-wines">Our wines</a></li>

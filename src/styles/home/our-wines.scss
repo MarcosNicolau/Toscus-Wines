@@ -1,4 +1,4 @@
-@import 'library';
+@import '../library';
 
 .our-wines-container {
     @include flex-center(row);

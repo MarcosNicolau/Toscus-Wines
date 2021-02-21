@@ -1,0 +1,10 @@
+@import 'library';
+
+section > * {
+    opacity: 0;
+    transform: translateY(150%);
+}
+
+.active-section > * {
+    @include active-animation(1000ms);
+}

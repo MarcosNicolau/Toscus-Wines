@@ -1,4 +1,4 @@
-@import 'library';
+@import '../library';
 
 .this-is-toscus-container {
     @include flex-center(column);

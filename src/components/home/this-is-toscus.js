@@ -1,6 +1,6 @@
 import Explanation from '../explanation';
 import abstractImg from '../../assets/abstract-1.png';
-import '../../styles/this-is-toscus.scss';
+import '../../styles/home/this-is-toscus.scss';
 
 const ThisIsToscus = () => {
 

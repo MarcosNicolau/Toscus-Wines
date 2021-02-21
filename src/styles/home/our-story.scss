@@ -1,8 +1,12 @@
-@import 'library';
+@import '../library';
 
 .our-story-container {
     @include flex-center(column);
     margin-bottom: 15em;
+    gap: 3em;
+    .explanation-container {
+        transform: translateY(0%);
+    }
 }
 
 .img-container {

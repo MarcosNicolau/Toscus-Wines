@@ -1,4 +1,4 @@
-@import 'library';
+@import '../library';
 
 .our-vineyards-container {
     @include flex-center(column);
@@ -9,7 +9,7 @@
     @include flex-center(column);
     background-color: #e0e0e094;
     width: 100%;
-    padding: 2em;
+    padding-block: 2em;
     img {
         height: 50em;
     }

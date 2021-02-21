@@ -43,3 +43,9 @@ $brand-size: 2.4rem;
     text-decoration: none;
     color: $secondary-color;
 }
+
+@mixin active-animation($duration) {
+    opacity: 1;
+    transform: translateY(0%);
+    @include transition(all, $duration);
+}

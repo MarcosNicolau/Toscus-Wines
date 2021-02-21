@@ -1,11 +1,11 @@
-@import 'library';
+@import '../library';
 
 .hero-container {
     @include fullscreen;
     @include flex-center(column);
     position: relative;
 
-    background-image: url('../assets/hero-4.jfif');
+    background-image: url('../../assets/hero-4.jfif');
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -27,8 +27,7 @@
 
 .brand-name {
     position: absolute;
-    transform: translateY(100%);
-    opacity: 0;
+    animation: brand-name-an 600ms ease-in-out forwards;
 
     margin: 0;
     bottom: 1em;
@@ -44,8 +43,13 @@
     }
 }
 
-.brand-name-active {
-    opacity: 1;
-    transform: translateX(0%);
-    @include transition(all, 500ms);
+@keyframes brand-name-an {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }

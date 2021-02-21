@@ -3,7 +3,7 @@ import LearnMoreBtn from '../learn-more-btn';
 import ourWinesImg_1 from '../../assets/our-wines-1.jfif';
 import ourWinesImg_2 from '../../assets/our-wines-2.jfif';
 import abstractImg from '../../assets/abstract-2.png';
-import '../../styles/our-wines.scss';
+import '../../styles/home/our-wines.scss';
 
 const OurWines = () => {
     const description = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.';
