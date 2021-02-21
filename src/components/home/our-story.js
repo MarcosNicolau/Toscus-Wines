@@ -14,7 +14,7 @@ const OurStory = () => {
                     <LearnMoreBtn />
                 </div>
                 <div className="img-container">
-                    <img src={ourStoryImg} alt="our-story-img"/>
+                    <img src={ourStoryImg} alt="our-story-img" className='our-story-img'/>
                 </div>
             </div>
         </section>

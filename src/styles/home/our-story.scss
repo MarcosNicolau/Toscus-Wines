@@ -11,14 +11,14 @@
 
 .img-container {
     margin-top: 2em;
-    img {
+    .our-story-img {
         height: 50em;
     }
 }
 
 @media screen and (max-width: 1400px) {    
     .img-container {        
-        img {
+        .our-story-img {
             height: 30em;
         }
     }
