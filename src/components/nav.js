@@ -17,9 +17,9 @@ const Nav = () => {
             />
             <div className={`hamburguer ${toogleNav ? 'nav-active' : null}`}>
                 <ul onClick={() => setToogleNav(prev => !prev)}>
-                    <li><a href="#this-is-us">Who we are</a></li>
+                    <li><a href="#this-is-toscus">Who we are</a></li>
                     <li><a href="#balance">What define us</a></li>
-                    <li><a href="#toscus-wines">Our wines</a></li>
+                    <li><a href="#our-wines">Our wines</a></li>
                     <li><a href="#our-vineyards">Our vineyards</a></li>
                     <li><a href="#visit-us">Visit us</a></li>
                     <li><a href="#our-story">Our Story</a></li>

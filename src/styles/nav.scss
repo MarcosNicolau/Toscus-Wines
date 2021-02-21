@@ -36,6 +36,14 @@ nav {
         color: white;
         font-family: $main-font;
         font-size: $brand-size;
+        @include transition(all, 150ms);
+
+        &:hover {
+            color: $tertiary-color;
+            text-decoration: underline;
+            text-decoration-color: $tertiary-color;
+            @include transition(color, 150ms);
+        }
     }
 }
 
