@@ -1,14 +1,11 @@
 import '../styles/nav.scss';
 import hamburguerImg from'../assets/hamburguer.svg';
 import close from '../assets/close.svg'
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const Nav = () => {
     const [toogleNav, setToogleNav] = useState(false);    
-    useEffect(() => {
-        if(toogleNav) return document.body.style.overflow = 'hidden';
-        document.body.style.overflow = ''
-    }, [toogleNav])
+ 
     return(
         <nav>
             <img src={toogleNav ? close : hamburguerImg} alt="hamburguer-btn"

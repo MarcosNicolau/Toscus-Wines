@@ -3,13 +3,17 @@
 .learn-more-btn {
     margin-top: 2em;
     a {
+        @include flex-center(row);
         @include btn(1.1rem);
+        position: relative;
+        justify-content: unset;
     }
 
     img {
+        position: absolute;
+        right: -2em;
         transform: translateX(-150%);
         opacity: 0;
-        margin-left: .5em;
         height: .8em;
         @include transition(all, 150ms);
     }

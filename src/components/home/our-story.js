@@ -8,13 +8,13 @@ const OurStory = () => {
     const description = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text. '
     return (
         <section id="our-story">
-            <div className="our-story-container">
+            <div className="our-story-container container">
                 <div className="explanation-container">
                     <Explanation title={'Our story'} subtitle={'Brilliant, & full of passion'} description={description}/>
                     <LearnMoreBtn />
                 </div>
                 <div className="img-container">
-                    <img src={ourStoryImg} alt="our-story-img" style={{height: '50em'}}/>
+                    <img src={ourStoryImg} alt="our-story-img"/>
                 </div>
             </div>
         </section>

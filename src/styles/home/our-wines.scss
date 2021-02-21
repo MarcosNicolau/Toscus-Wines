@@ -7,10 +7,12 @@
 }
 
 .images {
-    display: flex;
-    height: 36em;
-    width: 48em;
-    gap: 1em;
+    @include flex-center(row);
+    flex-wrap: nowrap;
+    img {
+        margin: 0 .5em;
+        height: 36em;
+    }
 }
 
 .up-image {
@@ -21,4 +23,25 @@
     position: absolute;
     top: 15em;
     left: 0;
+    z-index: -1;
+    max-width: 100%;
 }
+
+@media screen and (max-width: $phone-tablet) {        
+    .images {
+        img {
+            height: 15em;
+        }
+    }
+
+    .up-image {
+        transform: translateY(0em);
+    }
+} 
+
+@media screen and (max-width: 1600px) {   
+    .our-wines-container {
+        @include flex-center(column);
+        gap: 0em;
+    }
+} 

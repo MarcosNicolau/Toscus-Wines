@@ -25,3 +25,19 @@
         font-size: 1.25rem;
     }
 }
+
+
+@media screen and (max-width: 600px) {    
+    .explanation {
+        width: 20rem;
+        h1 {
+            font-size: 2rem;
+        }
+        h5 {
+            font-size: 1rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }  
+} 

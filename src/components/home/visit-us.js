@@ -11,7 +11,7 @@ const VisitUs = () => {
         <section id="visit-us">
             <div className='container'>
                 <div className="img-container">
-                    <img src={visitUsImg} alt="visit-us-img" style={{height: '25em'}}/>
+                    <img src={visitUsImg} alt="visit-us-img"/>
                 </div>
                 <div className="explanation-container">
                     <Explanation title={'Visit Us'} subtitle={'an unforgettable experience'} description={description}/>

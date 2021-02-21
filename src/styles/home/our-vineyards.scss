@@ -9,7 +9,7 @@
     @include flex-center(column);
     background-color: #e0e0e094;
     width: 100%;
-    padding-block: 2em;
+    padding: 2em 0em;
     img {
         height: 50em;
     }
@@ -33,8 +33,8 @@
         height: 8em;
         cursor: pointer;
         @include transition(opacity, 150ms);
-
     }
+
     .controllers:hover {
         opacity: .6;
         @include transition(opacity, 150ms);
@@ -43,11 +43,11 @@
 
 .img-position {
     @include flex-center(row);
-    gap: 1em;
     width: 100%;
     height: 2em;
 
     .imgs-line {
+        margin: .5em;
         width: 10em;
         height: .2em;
         background-color: $tertiary-color;
@@ -61,4 +61,31 @@
     }
 }
 
+@media screen and (max-width: 900px) {   
+    .gallery {
+        img {
+            height: 30em;
+        }
+    }
 
+    .gallery-controller {
+        .controllers {
+           display: none;
+        }
+    }
+
+    .img-position {
+        .imgs-line {
+            width: 5em;
+        }
+    }
+} 
+
+
+@media screen and (max-width: 700px) {   
+    .gallery {
+        img {
+            height: 20em;
+        }
+    }
+} 

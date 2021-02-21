@@ -8,13 +8,38 @@
 
 .explanation-container {
     @include flex-center(column);
-    transform: translateY(-5em);
+    margin-bottom: 5em;
 }
 
 .img-container {
     background-color: $imgs-background;
 
     img {
+        height: 25em;
         transform: translate(3em, -3em);
     }
 }
+
+
+@media screen and (max-width: 900px) {    
+    .container {
+        gap: 10em;
+        .img-container {
+            margin-bottom: 10em;
+            img {
+                height: 25em;
+                transform: translate(1em, -1em);
+            }
+        }
+    }
+    
+} 
+@media screen and (max-width: 700px) {    
+    .container {
+        .img-container {
+            img {
+                height: 13em;
+            }
+        }
+    }
+} 

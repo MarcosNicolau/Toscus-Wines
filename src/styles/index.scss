@@ -1,3 +1,5 @@
+@import 'library';
+
 :root{
   scroll-behavior: smooth;
 }
@@ -22,3 +24,15 @@ main {
   flex-direction: column;
   gap: 18em;
 }
+
+@media screen and (max-width: 950px) {    
+  main {
+    gap: 15em;
+  }
+} 
+
+@media screen and (max-width: $phone-tablet) {    
+  main {
+    gap: 10em;
+  }
+} 

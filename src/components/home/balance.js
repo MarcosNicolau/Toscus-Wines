@@ -10,7 +10,7 @@ const Balance = () => {
         <section id="balance">
             <div className='container'>
                 <div className="img-container">
-                    <img src={balanceImg} alt="balance-img" style={{height: '20em'}}/>
+                    <img src={balanceImg} alt="balance-img"/>
                 </div>
                 <div className="explanation-container">
                     <Explanation title={'Balance'} subtitle={'is what we are known for'} description={description}/>
